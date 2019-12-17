@@ -1401,11 +1401,6 @@ img {
 .swiper-pagination {
   display: none;
 }
-/* .swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 0;
-} */
 .swiper-slide {
   background: transparent !important;
 }
