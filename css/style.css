@@ -1455,7 +1455,7 @@ img {
 }
 .full-product .filter select.option-set {
   padding: 1rem 0.75rem;
-  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   color: var(--third-color);
   background: #fff;
   border-radius: 0.25rem;
