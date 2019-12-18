@@ -335,7 +335,7 @@ img {
   }
   .new-icons {
     display: grid;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: left;
     padding: 10px 5px;
