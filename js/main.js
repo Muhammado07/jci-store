@@ -26,23 +26,24 @@ $(function () {
   $(".toggle-links").click(function (e) {
     e.stopPropagation();
   })
-  $("body, html").click(function (e) {
-    $(".mob-links").removeClass("appear");
+  // $("body, html").click(function (e) {
+  //   $(".mob-links").removeClass("appear");
 
-    if ($(".mob-links").hasClass("appear")) {
-      $(".navbar-col .bottom-nav .logo").animate({
-        opacity: 0
-      }, 500);
-    } else {
-      $(".navbar-col .bottom-nav .logo").animate({
-        opacity: 1
-      }, 500)
-    }
-  })
+  //   if ($(".mob-links").hasClass("appear")) {
+  //     $(".navbar-col .bottom-nav .logo").animate({
+  //       opacity: 0
+  //     }, 500);
+  //   } else {
+  //     $(".navbar-col .bottom-nav .logo").animate({
+  //       opacity: 1
+  //     }, 500)
+  //   }
+  // })
 
   $(".navbar-col .bottom-nav .side-info .search").click(function () {
     $(".navbar-col .text-search").toggleClass("apper");
   })
+
 
   $('.search-button').click(function () {
     $(this).parent().toggleClass('open');
@@ -160,4 +161,5 @@ $(function () {
     $container.isotope({ filter: selector });
     return false;
   });
+
 });
