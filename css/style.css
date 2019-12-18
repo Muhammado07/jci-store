@@ -272,6 +272,7 @@ img {
     display: block;
     background: #fff;
     position: fixed;
+    overflow-y: scroll;
     width: 0;
     left: -100%;
     top: 0;
