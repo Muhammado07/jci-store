@@ -2616,7 +2616,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-size: 0.8rem;
   }
 }
-.swiper-pagination-bullet {
+.hero .swiper-pagination-bullet {
   display: none;
 }
 .swiper-pagination-bullet-active {
