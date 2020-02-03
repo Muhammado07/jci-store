@@ -844,11 +844,6 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (max-width: 360px) {
-  .icons .icon {
-    grid-template-columns: 1fr;
-  }
-}
 .icons h2 {
   font-size: 2rem;
 }
