@@ -473,12 +473,17 @@ img {
 } */
 @media screen and (max-width: 991px) {
   .hero {
-    height: 90vh;
+    height: 60vh;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .hero {
     height: 45vh;
+  }
+}
+@media screen and (max-width: 484px) {
+  .hero {
+    height: 40vh;
   }
 }
 .hero .swiper-container {
@@ -524,13 +529,18 @@ img {
   background: var(--fourth-color);
   padding: 3rem 0;
 }
+@media screen and (max-width: 767px) {
+  .products {
+    padding: 0 0 1rem 0;
+  }
+}
 .products .product {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .products .product {
     display: grid;
     grid-template-columns: 1fr;
@@ -543,11 +553,16 @@ img {
 .products .product:not(:last-of-type) {
   margin-bottom: 2rem;
 }
+@media screen and (max-width: 991px) {
+  .products .product {
+    margin-bottom: 1rem !important;
+  }
+}
 .products .product .image {
   z-index: 2;
   position: relative;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .products .product .image {
     order: -1;
   }
@@ -555,8 +570,13 @@ img {
 .products .product .image img {
   width: 100%;
   height: auto;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); */
   position: relative;
+}
+@media screen and (max-width: 991px) {
+  .products .product .image img {
+    height: 100%;
+  }
 }
 /* .products .product .image:before {
   content: "";
@@ -601,7 +621,7 @@ img {
   top: -8px;
   left: -8px;
 } */
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .products .product .image img {
     width: 100%;
   }
@@ -614,7 +634,7 @@ img {
 .products .product .hide-text {
   display: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .products .product h2 {
     display: none;
   }
@@ -635,6 +655,11 @@ img {
   margin-top: 0.5rem;
 }
 @media screen and (max-width: 991px) {
+  .products .product .product-info {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
   .products .product .product-info {
     margin-left: 0 !important;
   }
@@ -684,12 +709,24 @@ img {
   text-decoration: none !important;
   opacity: 1;
 }
-/* .products .product .product-info.even {
-  margin-right: -70px;
-} */
+.products .product .product-info.even {
+  padding: 0 2rem 2rem 0;
+}
 @media screen and (max-width: 991px) {
   .products .product .product-info.even {
     margin-right: 0;
+    padding: 3rem 3rem 3rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .products .product .product-info.even {
+    padding: 0 2rem 0rem 0rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .products .product .product-info,
+  .products .product .product-info.even {
+    padding: 0;
   }
 }
 .products .product .product-info .tag {
@@ -792,9 +829,24 @@ img {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border-color: transparent;
 }
+@media screen and (max-width: 991px) {
+  .icons .icon {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 @media screen and (max-width: 767px) {
   .icons .icon {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 484px) {
+  .icons .icon {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 360px) {
+  .icons .icon {
+    grid-template-columns: 1fr;
   }
 }
 .icons h2 {
@@ -858,16 +910,7 @@ img {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-/* .icons .icon .card:hover {
-  background: var(--primary-color);
-  color: #fff;
-  box-shadow: 0 10px 20px rgba(54, 119, 213, 0.3);
-} */
-@media screen and (max-width: 767px) {
-  .icons .icon {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 .icons .icon .card .imgbox .reimg {
   background: #eaeef5;
   border-radius: 5px;
@@ -905,8 +948,8 @@ img {
 /* .icons .icon .card:hover .imgbox .reimg img.show {
   display: block;
 } */
-.icons .icon .card .imgbox h3 {
-  margin: 1rem auto;
+.icons .icon .card .imgbox p {
+  margin: 0.5rem auto;
   font-weight: 500;
 }
 .icons .icon .card .appear-mob {
@@ -2577,6 +2620,9 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0.2rem 0.5rem;
     font-size: 0.8rem;
   }
+}
+.swiper-pagination-bullet {
+  display: none;
 }
 .swiper-pagination-bullet-active {
   background: var(--primary-color);
