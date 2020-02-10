@@ -782,6 +782,9 @@ img {
   grid-gap: 1rem;
   margin: 3rem auto;
 }
+.icons-1 .icon {
+  grid-template-columns: repeat(auto-fit, 300px);
+}
 .icons h2 {
   color: var(--primary-color);
   font-size: 2rem;
@@ -833,19 +836,28 @@ img {
   .icons .icon {
     grid-template-columns: repeat(4, 1fr);
   }
+  .icons-1 .icon {
+    grid-template-columns: repeat(auto-fit, 200px);
+  }
 }
 @media screen and (max-width: 767px) {
   .icons .icon {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .icons-1 .icon {
+    grid-template-columns: repeat(auto-fit, 200px);
   }
 }
 @media screen and (max-width: 484px) {
   .icons .icon {
     grid-template-columns: repeat(2, 1fr);
   }
+  .icons-1 .icon {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .icons h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .icons .icon .icon-holder img {
   width: 3.5rem;
@@ -919,6 +931,9 @@ img {
   flex-direction: column;
   transition: all 0.2s ease-in-out;
 }
+.icons-1 .icon .card .imgbox .reimg {
+  background: transparent;
+}
 .icons .icon .card .imgbox > div {
   text-align: center;
   display: flex;
@@ -936,6 +951,9 @@ img {
   width: 38px;
   height: 100%;
   z-index: 1;
+}
+.icons-1 .icon .card .imgbox .reimg img {
+  width: 80px;
 }
 /* .icons .icon .card:hover .imgbox .reimg img:first-child {
   display: none;
