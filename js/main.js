@@ -41,9 +41,12 @@ $(function () {
   // })
 
   $(".navbar-col .bottom-nav .side-info .search").click(function () {
-    $(".navbar-col .text-search").toggleClass("apper");
+    $(".full-search").toggleClass("apper");
   })
 
+  $(".full-search .close").click(function () {
+    $(".full-search").toggleClass("apper");
+  })
 
   $('.search-button').click(function () {
     $(this).parent().toggleClass('open');
