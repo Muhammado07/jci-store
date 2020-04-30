@@ -1655,6 +1655,7 @@ img {
 }
 .swiper-slide {
   background: transparent !important;
+  height: auto !important;
 }
 /* .slick-dots {
   position: absolute;
@@ -2130,7 +2131,7 @@ img {
     -webkit-align-items: center;
     align-items: center;
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
   }
 }
 .new-slider .details .gallery .thumnails {

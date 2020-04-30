@@ -149,6 +149,9 @@
               <div class="swiper-slide">
                 <img src="img/img4.jpeg" alt="" />
               </div>
+              <div class="swiper-slide">
+                <img src="img/img5.jpeg" alt="" />
+              </div>
             </div>
             <div class="swiper-pagination"></div>
           </div>
@@ -675,9 +678,11 @@
     <script>
       $(".zoom-img").imagezoomsl({});
       var swiper = new Swiper(".swiper-container", {
+        autoHeight: true,
         pagination: {
           el: ".swiper-pagination",
-          dynamicBullets: true
+          dynamicBullets: true,
+          clickable: true
         }
       });
     </script>
