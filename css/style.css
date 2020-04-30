@@ -1551,7 +1551,7 @@ img {
 }
 @media screen and (max-width: 991px) {
   .info-head p {
-    margin: 1rem;
+    margin: 1rem 0;
   }
 }
 .info-head h3 {
