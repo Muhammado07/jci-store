@@ -1509,7 +1509,7 @@ img {
   border-radius: 20px;
   background: var(--primary-color);
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 484px) {
   .info-tag {
     padding: 0.5rem 1rem;
   }
