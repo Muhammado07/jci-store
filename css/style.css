@@ -648,7 +648,7 @@ img {
     grid-template-columns: 1fr;
     flex-direction: column;
     text-align: center;
-    background: var(--fourth-color);
+    /* background: var(--fourth-color); */
     margin: 1.2rem auto;
   }
 }
